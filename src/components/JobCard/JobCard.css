@@ -1,0 +1,72 @@
+.job-card {
+  background: #fff;
+  gap: 10px;
+  opacity: 1;
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  padding: 10px 20px 10px 20px;
+}
+
+.promoted {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333333
+}
+
+.job-header {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.company-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.job-info h3 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+  color: #333333
+}
+
+.company {
+  font-size: 14px;
+  color: #333333;
+  margin: 0;
+}
+
+.job-meta {
+  margin-top: 12px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #585D6E;
+  margin-top: 6px;
+}
+.meta-item .applicants{
+  color:#0154AA;
+}
+
+.meta-item img {
+  width: 16px;
+  height: 16px;
+}
+
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.save-icon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
