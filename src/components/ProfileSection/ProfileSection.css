@@ -95,6 +95,11 @@
   display: block;
 }
 .profile-calendar .sub-title {
-  color: #737A91;
+  color: #737a91;
   display: block;
+}
+@media (max-width: 1024px) {
+  .profile-card {
+    width: 100%;
+  }
 }

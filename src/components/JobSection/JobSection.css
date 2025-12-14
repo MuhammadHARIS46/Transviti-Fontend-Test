@@ -12,10 +12,12 @@
   align-items: center;
   margin-bottom: 15px;
   gap: 10px;
+  flex-direction: row;
 }
 
 .job-section-header h2 {
   font-size: 18px;
+  white-space: nowrap;
   font-weight: 500;
 }
 
@@ -26,6 +28,7 @@
   font-size: 14px;
   cursor: pointer;
   text-decoration: underline;
+  white-space: nowrap;
 }
 
 .view-more-btn:hover {
@@ -37,4 +40,20 @@
   gap: 16px;
   width: 100%;
   flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .job-grid {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media(max-width:576px){
+  .job-card{
+    width: 100%;
+  }
+  .job-section-header{
+    align-items: baseline;
+    flex-direction: column;
+  }
 }

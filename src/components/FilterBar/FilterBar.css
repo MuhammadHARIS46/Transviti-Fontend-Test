@@ -6,10 +6,11 @@
   padding: 16px;
   border-radius: 10px;
   width: 100%;
+  flex-direction: row;
 }
 
 .filter-bar > *:not(:last-child) {
-  border-right: 1px solid #E9ECEF;
+  border-right: 1px solid #e9ecef;
 }
 
 .filter-input {
@@ -18,11 +19,34 @@
   padding: 0 14px;
   border-radius: 8px;
   font-size: 14px;
-  color: #585D6E;
+  color: #585d6e;
   border: none;
 }
 
 .filter-input:focus {
   outline: none;
   border: 1px solid #0a66c2;
+}
+.filter-bar .dropdown {
+  width: 180px;
+}
+
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .filter-input {
+    width: 100%;
+    padding: 10px 14px;
+  }
+  .filter-bar .dropdown {
+    width: 100% !important;
+  }
+  .filter-bar > *:not(:last-child) {
+    border-right: none;
+  }
+  .filter-bar .btn.btn-primary{
+    width: 100% !important;
+  }
 }

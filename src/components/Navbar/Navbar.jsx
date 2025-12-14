@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import Button from "../common/Button/Button";
 
@@ -17,12 +17,21 @@ const menuItems = [
 ];
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar-container-main">
       <div className="navbar-left">
         <img src={AppLgo} alt="logo" className="navbar-logo" />
 
-        <ul className="navbar-menu">
+        <ul className={`navbar-menu ${menuOpen ? "open" : ""}`}>
+          <div className="navbar-mobile-extra">
+            <div className="navbar-search">
+              <img src={searchIcon} alt="search" />
+              <input type="text" placeholder="Search" />
+            </div>
+            <Button label="Resume Builder" onClick={() => {}} />
+          </div>
           {menuItems.map((item) => (
             <li
               key={item.id}
@@ -32,16 +41,23 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        <div
+          className="navbar-toggle"
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          {menuOpen ? "×" : "☰"}
+        </div>
       </div>
 
       <div className="navbar-right">
-        <div className="navbar-search">
-          <img src={searchIcon} alt="search" />
-          <input type="text" placeholder="Search" />
+        <div className="navbar-deskotp-search">
+          <div className="navbar-search">
+            <img src={searchIcon} alt="search" />
+            <input type="text" placeholder="Search" />
+          </div>
+          <Button label="Resume Builder" onClick={() => {}} />
         </div>
-
-        <Button label="Resume Builder" onClick={() => {}} />
-
         <img src={userAvatar} alt="user" className="navbar-avatar" />
       </div>
     </nav>
