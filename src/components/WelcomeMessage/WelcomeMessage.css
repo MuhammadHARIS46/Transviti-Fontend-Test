@@ -1,0 +1,13 @@
+.welcome-title{
+    font-size: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+.welcome-title span{
+    color: #0154AA;
+}
+
+.subMessage{
+    color: #585D6E;
+    font-size: 14px;
+}

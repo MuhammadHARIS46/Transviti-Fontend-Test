@@ -19,7 +19,6 @@ const menuItems = [
 const Navbar = () => {
   return (
     <nav className="navbar-container-main">
-      {/* Left Section */}
       <div className="navbar-left">
         <img src={AppLgo} alt="logo" className="navbar-logo" />
 
@@ -35,7 +34,6 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Right Section */}
       <div className="navbar-right">
         <div className="navbar-search">
           <img src={searchIcon} alt="search" />

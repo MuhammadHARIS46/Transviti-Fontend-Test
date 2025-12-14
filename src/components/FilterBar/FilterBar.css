@@ -1,0 +1,28 @@
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.filter-bar > *:not(:last-child) {
+  border-right: 1px solid #E9ECEF;
+}
+
+.filter-input {
+  flex: 1;
+  height: 42px;
+  padding: 0 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #585D6E;
+  border: none;
+}
+
+.filter-input:focus {
+  outline: none;
+  border: 1px solid #0a66c2;
+}

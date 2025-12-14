@@ -1,0 +1,40 @@
+.job-section {
+  border-bottom: 1px solid #e9ecef;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.job-section:last-child {
+  border-bottom: none;
+}
+
+.job-section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.job-section-header h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.view-more-btn {
+  background: none;
+  border: none;
+  color: #0a66c2;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.view-more-btn:hover {
+  text-decoration: underline;
+}
+
+.job-grid {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  flex-wrap: wrap;
+}

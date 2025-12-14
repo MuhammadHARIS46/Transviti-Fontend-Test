@@ -1,0 +1,17 @@
+.similar-tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.similar-label {
+  font-size: 13px;
+  color: #667085;
+}
+
+.tags-wrapper {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}

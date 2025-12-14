@@ -1,0 +1,20 @@
+.tag {
+  padding: 8px 15px;
+  border: 1px solid #737a91;
+  font-size: 12px;
+  cursor: pointer;
+  color: #737a91;
+  transition: all 0.2s ease;
+  border-radius: 5px;
+}
+
+.tag:hover {
+  border-color: #0a66c2;
+  color: #0a66c2;
+}
+
+.tag-active {
+  background-color: #eff6ff;
+  border-color: #0a66c2;
+  color: #0a66c2;
+}

@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .navbar-left {
@@ -27,12 +31,12 @@
 
 .navbar-menu-item {
   font-size: 16px;
-  color: #737A91;
+  color: #737a91;
   cursor: pointer;
 }
 
 .navbar-menu-item.active {
-  color: #0154AA;
+  color: #0154aa;
   font-weight: 600;
 }
 
@@ -45,7 +49,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background: #F6F9FF;
+  background: #f6f9ff;
   padding: 6px 10px;
   border-radius: 8px;
 }
