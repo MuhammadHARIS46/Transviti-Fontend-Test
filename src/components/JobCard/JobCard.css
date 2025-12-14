@@ -5,12 +5,12 @@
   border-radius: 10px;
   border: 1px solid #e1e1e1;
   padding: 10px 20px 10px 20px;
+  color: #333333;
 }
 
 .promoted {
   font-size: 12px;
   font-weight: 600;
-  color: #333333
 }
 
 .job-header {
@@ -33,7 +33,6 @@
 
 .company {
   font-size: 14px;
-  color: #333333;
   margin: 0;
 }
 
